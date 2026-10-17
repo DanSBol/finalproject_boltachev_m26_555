@@ -73,8 +73,7 @@ finalproject_boltachev_m26_555/
 ├── uv.lock                    # Lock-файл зависимостей
 ├── README.md
 └── .gitignore
-
----
+```
 
 ## 🚀 Быстрый старт
 
@@ -108,30 +107,29 @@ finalproject_boltachev_m26_555/
 
 ## 🧪 Основные команды CLI
 После запуска модуля доступны следующие команды:
-
-- uv run valutatrade-hub register --username <name> --password <pass>
-- uv run valutatrade-hub login --username <name> --password <pass>
-- uv run valutatrade-hub logout
-- uv run valutatrade-hub show-portfolio [--base <currency>]
-- uv run valutatrade-hub buy --currency <code> --amount <value>
-- uv run valutatrade-hub sell --currency <code> --amount <value>
-- uv run valutatrade-hub get-rate --from <code> --to <code>
-- uv run valutatrade-hub update-rates [--source coingecko|exchangerate]
-- uv run valutatrade-hub show-rates [--currency <code> | --top N | --base <code>]
-
+  ```bash
+  uv run valutatrade-hub register --username <name> --password <pass>
+  uv run valutatrade-hub login --username <name> --password <pass>
+  uv run valutatrade-hub logout
+  uv run valutatrade-hub show-portfolio [--base <currency>]
+  uv run valutatrade-hub buy --currency <code> --amount <value>
+  uv run valutatrade-hub sell --currency <code> --amount <value>
+  uv run valutatrade-hub get-rate --from <code> --to <code>
+  uv run valutatrade-hub update-rates [--source coingecko|exchangerate]
+  uv run valutatrade-hub show-rates [--currency <code> | --top N | --base <code>]
+  ```
 Пример сессии:
 
-bash
-
-- uv run valutatrade-hub register --username Dan --password 1234
-- uv run valutatrade-hub login --username Dan --password 1234
-- uv run valutatrade-hub get-rate --from EUR --to USD
-- uv run valutatrade-hub buy --currency EUR --amount 100
-- uv run valutatrade-hub show-portfolio --base USD
-- uv run valutatrade-hub sell --currency EUR --amount 40
-- uv run valutatrade-hub show-rates --top 2
-- uv run valutatrade-hub logout
-
+  ```bash
+  uv run valutatrade-hub register --username Dan --password 1234
+  uv run valutatrade-hub login --username Dan --password 1234
+  uv run valutatrade-hub get-rate --from EUR --to USD
+  uv run valutatrade-hub buy --currency EUR --amount 100
+  uv run valutatrade-hub show-portfolio --base USD
+  uv run valutatrade-hub sell --currency EUR --amount 40
+  uv run valutatrade-hub show-rates --top 2
+  uv run valutatrade-hub logout
+  ```
 ⚠️ Для операций buy, sell и show-portfolio требуется предварительно выполнить login. Новому пользователю начисляется стартовый капитал 10 000 USD.
 
 ## 💱 Источники курсов
@@ -164,11 +162,10 @@ bash
 - Форматирование через ruff format.
 
 Запуск проверок:
-
-bash
-uv run ruff check .
-uv run ruff format --check .
-
+  ```bash
+  uv run ruff check .
+  uv run ruff format --check .
+  ```
 ## 📝 Примечания и ограничения
 - Проект учебный: используется файловое хранилище вместо СУБД.
 - Пароли хешируются, но проект не предназначен для продакшн-использования.
