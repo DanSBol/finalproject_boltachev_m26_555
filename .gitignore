@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
+uv.lock
+data/*.json
+!data/.gitkeep
+.env
+logs/
+.pytest_cache/
+.ruff_cache/
+
+# Локальные тесты (не входят в сдачу)
+valutatrade_hub/tests/
